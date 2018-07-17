@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice Pixel Page</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="container">
+			  <div style="margin-top: 25px;" class="jumbotron text-center">
+			    <h1>Practice Tracking Pixel</h1> 
+			    <p>This is how Big Brother spies on you.  Muahahahaha...</p> 
+			  </div>
+			  <h3 class="text-center">
+			  If this was the end of the world..
+			  </h3>
+
+			  <h3 class="text-center">
+			  What would be the last thing you choose?
+			  </h3>
+			</div>
+		</div>
+	</div>
+
+	<div style="margin-top: 42px; margin-bottom: 82px;" class="row">
+		<div class="col-md-4 text-center">
+			<img style="width: 100%; margin-bottom: 10px;" src="https://www.cicis.com/media/1243/pizza_adven_zestypepperoni.png">
+			<button id="pizza" type="button" class="btn btn-success">Eat Pizza?</button>
+		</div>
+		<div class="col-md-4 text-center">
+			<img style="width: 50%; margin-left: 52px; margin-bottom: 10px; margin-right: 52px;" src="https://is2-ssl.mzstatic.com/image/thumb/Music/y2005/m04/d12/h13/s05.hvbtonbk.jpg/600x600bf.jpg">
+			<button id="slayer" type="button" class="btn btn-success">Scream Slayer?</button>
+		</div>
+		<div class="col-md-4 text-center">
+			<img style="width: 75%; margin-left: 52px; margin-bottom: 10px; margin-right: 52px;" src="http://www.flyfisherman.com/files/2017/06/FFMP-161200-STL-02.jpg">
+			<button id="fishing" type="button" class="btn btn-success">Go Fishing?</button>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$("#pizza").click(function(){
+		alert("You chose pizza.  Unfortunately every pizza joint is underneath a pool of lava.");
+		var url = "thank_you/thank_you.html";
+		$(location).attr('href',url);
+	});
+
+	$("#slayer").click(function(){
+		alert("SLAYER!!!!!!!!");
+		var url = "thank_you/thank_you.html";
+		$(location).attr('href',url);
+	});
+
+	$("#fishing").click(function(){
+		alert("You chose fishing.  Too bad your rod and bait was sucked up in the sharknado.");
+		var url = "thank_you/thank_you.html";
+		$(location).attr('href',url);
+	});
+</script>
+
+</body>
+</html>
